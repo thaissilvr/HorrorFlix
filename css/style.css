@@ -1,0 +1,28 @@
+header
+{
+  background-color: rgb(185, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  
+}
+
+.navContainer
+{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+
+}
+
+.sign, .login
+{
+  border: 1.5px solid white;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 20px;
+}
