@@ -26,3 +26,16 @@ header
   padding: 10px;
   font-size: 20px;
 }
+
+.aboutTheSite
+{
+  height: 250px;
+  padding: 40px;
+}
+
+.imagesFilms
+{
+  height: 300px;
+  background-color: rgb(185, 0, 0) ;
+}
+
