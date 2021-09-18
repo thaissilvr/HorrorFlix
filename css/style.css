@@ -12,21 +12,6 @@ header
   
 }
 
-#carouselContainer{
-  display: block;
-  width: 100%;
-  overflow: hidden;
-
-}
-
-.imgscared {
-  width: 100%;
-}
-.imgscared img{
-
-  width: fit-content;
-}
-
 .logoprincipal {
   padding: 2em;
   width: 50%;
@@ -39,15 +24,14 @@ header
   justify-content: space-evenly;
   list-style: none;
   align-items: center;
-
+  
 }
 
-.sign, .login
-{
-  border: 1.5px solid white;
-  border-radius: 7px;
-  padding: 10px;
-  font-size: 20px;
+#carouselContainer{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  
 }
 
 .aboutTheSite
@@ -58,7 +42,43 @@ header
 
 .imagesFilms
 {
-  height: 300px;
+  height: 380px;
   background-color: #bd0909;
+  padding: 30px;
 }
 
+.glide__arrows
+{
+  text-align: center;
+}
+
+.plansSection
+{
+  padding: 40px;
+}
+
+
+.plans
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+h3::after
+{
+  content: '';
+  display: block;
+  max-width: 220px;
+  height: 1px;
+  background-color: #bd0909;
+  margin-top: 10px;
+}
+
+.imgscared {
+  width: 100%;
+  width: fit-content;
+}
+.imgscared img{
+  
+  width: fit-content;
+}
