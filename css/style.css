@@ -1,12 +1,20 @@
 header
 {
-  background-color: rgb(185, 0, 0);
+  background-color: #bd0909;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   
+}
+
+.logoprincipal {
+  padding: 2em;
+  width: 50%;
 }
 
 .navContainer
@@ -16,13 +24,61 @@ header
   justify-content: space-evenly;
   list-style: none;
   align-items: center;
-
+  
 }
 
-.sign, .login
+#carouselContainer{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.aboutTheSite
 {
-  border: 1.5px solid white;
-  border-radius: 7px;
-  padding: 10px;
-  font-size: 20px;
+  height: 250px;
+  padding: 40px;
+}
+
+.imagesFilms
+{
+  height: 380px;
+  background-color: #bd0909;
+  padding: 30px;
+}
+
+.glide__arrows
+{
+  text-align: center;
+}
+
+.plansSection
+{
+  padding: 40px;
+}
+
+
+.plans
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+h3::after
+{
+  content: '';
+  display: block;
+  max-width: 220px;
+  height: 1px;
+  background-color: #bd0909;
+  margin-top: 10px;
+}
+
+.imgscared {
+  width: 100%;
+  width: fit-content;
+}
+.imgscared img{
+  
+  width: fit-content;
 }
