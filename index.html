@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=H, initial-scale=1.0">
-  <title>HorrorFlix</title>
+  <title>HorrorFlix 👻</title>
   
   
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-
+  
   <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   
 </head>
 <body>
@@ -21,12 +24,12 @@
       <!-- mudar para img depois -->
       <h1><img src="./css/images/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></h1> 
     </div>
-
+    
     <!-- Barra de navegação -->
     <nav class="navContainer">
-      <li class="sign">Sign up</li>
-      <li class="login">Login</li>
-      <li class="search">Search</li>
+      <li class="btn btn-danger" id="signUp">Sign up</li>
+      <li class="btn btn-danger" id="login">Login</li>
+      <li class="btn btn-danger" id="search">Search</li>
     </nav>
   </header>
   
@@ -57,78 +60,135 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  
   
   <section class="aboutTheSite">
     <h2>Our horror movie collection for you</h2>
     <p>texto explicativo sobre nosso site</p>
   </section>
-
+  
   <section class="imagesFilms">
     <!-- imagens/cards dos filmes aqui -->
-    <div id="imageCard">
-      <img src="" alt="">
-    </div>
 
-    <div id="imageCard">
-      <img src="" alt="">
-    </div>
-
-    <div id="imageCard">
-      <img src="" alt="">
-    </div>
-
-    <div id="imageCard">
-      <img src="" alt="">
-    </div>
-  </section>
-
-  <section>
-
-    <div class="card-deck">
-      <div class="card">
-          <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img id='image1' src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image2'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image3'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image4'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image5'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image6'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image7'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image8'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image9'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image10'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image11'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image12'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image13'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image14'src="./css/images/test1.jpg" alt="">
+          </li>
+          <li class="glide__slide">
+            <img id='image15'src="./css/images/test1.jpg" alt="">
+          </li>
+        </ul>
       </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
 
-      <div class="card">
-          <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
-
-      <div class="card">
-          <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="btn btn-outline-danger" id='btnFilm' data-glide-dir="<"><</button>
+        <button class="btn btn-outline-danger" id="btnFilm" data-glide-dir=">">></button>
       </div>
       
     </div>
 
   </section>
   
+  <section class="plansSection">
     
+    <div>
+      
+      <h2>Plans and Pricing</h2>
+      <p>HorrorFlix offers a variety of plans to meet your needs.</p>
+      
+    </div>
+    
+    <div class="plans">
+      
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h3 class="card-title">Basic</h3>
+          <p class="card-text">You can watch 1 screen at the <br> same time.</p>
+          <h5 class="planValue">12x $5</h5>
+          <a href="#" class="btn btn-danger">sign it</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h3 class="card-title">Standard</h3>
+          <p class="card-text">You can watch 2 screens  at the same time.</p>
+          <h5 class="planValue">12x $8</h5>
+          <a href="#" class="btn btn-danger">sign it</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h3 class="card-title">Premium</h3>
+          <p class="card-text">You can watch 4 screens  at the same time.</p>
+          <h5 class="planValue">12x $10</h5>
+          <a href="#" class="btn btn-danger">sign it</a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  
   <div class="imgscared">
     <img src="./css/images/friends-scared.jfif" alt="Friends watching a scary movie">
   </div>
-
+  
   <footer></footer>
   
   <script src="./css/bootstrap/js/bootstrap.min.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const configImagesFilms =
+    {
+      type: 'carousel',
+      perView: 6
+    }
+    new Glide('.glide', configImagesFilms).mount()
+  </script>
   
 </body>
 </html>
