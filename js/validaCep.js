@@ -1,3 +1,4 @@
+let socorr = document.getElementById("socorr");
 
 $('document').ready(function(){
     $('#cep').focusout(function(){
@@ -20,13 +21,14 @@ $('document').ready(function(){
         },
     
         error: function(erro){
-            alert('Coloque um endereço válido')
-            
-    
+            console.log(erro);
+            socorr.innerHTML = "Invalid Zip code"
+            setTimeout(()=>{
+                socorr.innerHTML = ""
+            }, 3000)
         }
 
         
     })
 })
 })
-
