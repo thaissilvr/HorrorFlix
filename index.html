@@ -8,16 +8,18 @@
   <title>HorrorFlix 👻</title>
   
   
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  
   <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
 
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-
   <script src="./js/app.js" defer></script>
+  
 </head>
 <body>
   
@@ -106,7 +108,7 @@
           <h3 class="card-title">Basic</h3>
           <p class="card-text">You can watch 1 screen at the <br> same time.</p>
           <h5 class="planValue">12x $5</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -115,7 +117,7 @@
           <h3 class="card-title">Standard</h3>
           <p class="card-text">You can watch 2 screens  at the same time.</p>
           <h5 class="planValue">12x $8</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -124,7 +126,7 @@
           <h3 class="card-title">Premium</h3>
           <p class="card-text">You can watch 4 screens  at the same time.</p>
           <h5 class="planValue">12x $10</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -138,14 +140,16 @@
   </div>
   
   <footer></footer>
-  
+
+    
   <script src="./css/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
   <script>
     const configImagesFilms =
     {
       type: 'carousel',
-      perView: 0
+      perView: 6
     }
     new Glide('.glide', configImagesFilms).mount()
   </script>
