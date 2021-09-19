@@ -63,3 +63,7 @@ legend{
 #submit:hover{
     background-image: linear-gradient(to right,rgb(181, 55, 55), rgb(220, 100, 20));
 }
+
+#socorr{
+    color: red;
+}

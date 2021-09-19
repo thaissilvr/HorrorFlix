@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  .plans
+  {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .developers
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+  
+  #divWebDev
+  {
+    padding: 5px;
+  }
+}
