@@ -10,20 +10,15 @@
   
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
   
   <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+  <script src="./js/app.js" defer></script>
   
-<<<<<<< Updated upstream
-=======
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-  
-  <script src="./js/app.js"></script>
->>>>>>> Stashed changes
 </head>
 <body>
   
@@ -77,67 +72,65 @@
   
   <section class="imagesFilms">
     <!-- imagens/cards dos filmes aqui -->
-    
+
     <div class="glide">
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
-          <li class="glide__slide" data-toglle="modal"  data-target="#siteModal" >
-            <a href="#" class="card-link" data-toglle="modal">
-              <img id='image1' src="./css/images/test1.jpg" alt="">
-            </a>
+          <li class="glide__slide">
+            <img id='image1' src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image2'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image3'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image4'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image5'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image6'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image7'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image8'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image9'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image10'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  ddata-target="siteModal">
+          <li class="glide__slide">
             <img id='image11'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image12'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image13'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image14'src="./css/images/test1.jpg" alt="">
           </li>
-          <li class="glide__slide" data-toglle="modal"  data-target="siteModal">
+          <li class="glide__slide">
             <img id='image15'src="./css/images/test1.jpg" alt="">
           </li>
         </ul>
       </div>
-      
+
       <div class="glide__arrows" data-glide-el="controls">
         <button class="btn btn-outline-danger" id='btnFilm' data-glide-dir="<"><</button>
         <button class="btn btn-outline-danger" id="btnFilm" data-glide-dir=">">></button>
       </div>
       
     </div>
-    
+
   </section>
   
   <section class="plansSection">
@@ -156,7 +149,7 @@
           <h3 class="card-title">Basic</h3>
           <p class="card-text">You can watch 1 screen at the <br> same time.</p>
           <h5 class="planValue">12x $5</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -165,7 +158,7 @@
           <h3 class="card-title">Standard</h3>
           <p class="card-text">You can watch 2 screens  at the same time.</p>
           <h5 class="planValue">12x $8</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -174,7 +167,7 @@
           <h3 class="card-title">Premium</h3>
           <p class="card-text">You can watch 4 screens  at the same time.</p>
           <h5 class="planValue">12x $10</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -186,45 +179,13 @@
   <div class="imgscared">
     <img src="./css/images/friends-scared.jfif" alt="Friends watching a scary movie">
   </div>
-  d
+  
   <footer></footer>
-  
-  <!-- modal -->
-  <div class="modal" id="siteModal" tabindex="-1" role="dialog">
-    <div class="modalDialog" role="document">
-      
-      <div class="modalContent">
-        
-        <div class="modalHeader" >
-          <div id="modalTitle" class="modal-title" ></div>
-          <button type="button" class="close" data-dimmiss="modal" ></button>
-          <span>&times;</span>
 
-        </div>
-          
-        <div class="modalBody" >
-          <p>testando</p>
-            
-            
-        </div>
-          
-          
-        <div class="modalFooter" >
-
-          <div>
-            <button type="button" class="btn btn-danger" data-dimmiss="modal">Close</button>
-          </div>
-
-        </div>
-        
-      </div>
-      
-    </div>
     
-  </div>
-  
   <script src="./css/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
   <script>
     const configImagesFilms =
     {
@@ -233,9 +194,6 @@
     }
     new Glide('.glide', configImagesFilms).mount()
   </script>
-  
-  
-  
   
 </body>
 </html>
