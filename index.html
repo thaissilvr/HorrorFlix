@@ -15,21 +15,28 @@
   <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
 
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+  <!-- Importação dos ícones do fontawesome -->
+  <script src="https://kit.fontawesome.com/be9d449732.js" crossorigin="anonymous"></script>
+
+
   
 </head>
 <body>
   
   <header>
     <div>
-      <!-- mudar para img depois -->
-      <h1><img src="./css/images/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></h1> 
+      <!-- Imagem da logo -->
+      <h1><a href="./index.html"><img src="./css/images/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></a></h1> 
     </div>
     
     <!-- Barra de navegação -->
     <nav class="navContainer">
       <li class="btn btn-danger" id="signUp">Sign up</li>
       <li class="btn btn-danger" id="login">Login</li>
-      <li class="btn btn-danger" id="search">Search</li>
+      <li class="btn btn-danger" id="search">Search <i class="fas fa-search"></i></li>
+
+      
     </nav>
   </header>
   
@@ -68,6 +75,7 @@
   </section>
   
   <section class="imagesFilms">
+    <p>What to watch?</p>
     <!-- imagens/cards dos filmes aqui -->
 
     <div class="glide">
@@ -146,7 +154,7 @@
           <h3 class="card-title">Basic</h3>
           <p class="card-text">You can watch 1 screen at the <br> same time.</p>
           <h5 class="planValue">12x $5</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -155,7 +163,7 @@
           <h3 class="card-title">Standard</h3>
           <p class="card-text">You can watch 2 screens  at the same time.</p>
           <h5 class="planValue">12x $8</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -164,7 +172,7 @@
           <h3 class="card-title">Premium</h3>
           <p class="card-text">You can watch 4 screens  at the same time.</p>
           <h5 class="planValue">12x $10</h5>
-          <a href="#" class="btn btn-danger">sign it</a>
+          <a href="#" class="btn btn-danger">Choose</a>
         </div>
       </div>
       
@@ -177,7 +185,19 @@
     <img src="./css/images/friends-scared.jfif" alt="Friends watching a scary movie">
   </div>
   
-  <footer></footer>
+  <footer>
+    <div class="copyright">
+
+    </div>
+    <nav class="navFooter">
+      <li><a href="#">Blog</a></li>
+      <li><a href="./info.html">Our Developers</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </nav>
+
+
+  </footer>
   
   <script src="./css/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
