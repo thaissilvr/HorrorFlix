@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,16 @@
     <script src="http://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" defer></script>
     <script src="js/validaCep.js" defer></script>
     <title>Horrorform</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/styleform.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+
+      <!-- Importação dos ícones do fontawesome -->
+  <script src="https://kit.fontawesome.com/be9d449732.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -85,23 +94,24 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereco" class="labelInput">Número</label>
+                    <label for="endereco" class="labelInput">Number</label>
                 </div>
                 <br>
-                <div class="inputBox">
+                <div class="inputBox" class="btn btn-danger">
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco" class="labelInput">Address 2</label>
                 </div>
-                <br>
-                <p id="socorr">&nbsp;</p>
-                <br>
-                <input type="submit" name="submit" id="submit">
+                
+                <!-- <p id="socorr">&nbsp;</p>
+                <br> -->
+                <input type="submit" name="submit" id="submit" value="I want to get scared" class="btn btn-danger">
             </fieldset>
         </form>
     </div>
 
     <footer>
         <div class="copyright">
+            
     
         </div>
         <nav class="navFooter">
@@ -110,8 +120,6 @@
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms & Conditions</a></li>
         </nav>
-    
-    
       </footer>
 
 </body>
