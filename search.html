@@ -8,7 +8,7 @@
   
   
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/info.css">
+  <link rel="stylesheet" href="./css/search.css">
   <link rel="stylesheet" href="./css/media.css">
   <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
   
@@ -36,7 +36,7 @@
   
   
   <section>
-    <div class="container">
+    <div class="containerFilms">
       <div class="films">
         
         <div id="tittle">
@@ -44,27 +44,38 @@
           <p class="movies__msg">What to watch?</p>
         </div>    
         
-        <div class="buscas">
-          <input type="text" id="pesquisa" placeholder="Digite aqui o filme que deseja buscar" name="movie" class="form__input">
-          <i class="fas fa-search"></i>
+        <div class="input">
+          
+          <input type="text" id="inputSearch" placeholder="What movie are you looking for?" name="movie" class="form__input">
+          <i class="fas fa-search" id="icon"></i>
           
         </div>    
-        
-        <div id="resultado" class="resultado">
-          <h1 id="titulo"></h1>
-        </div>
-        
-        <div id="resultadosBusca">
+                   
+        <div id="result">
           
         </div>
         
       </div>
-      <ul class="movies-all" id="movies"></ul>
+
+      <ul class="movies-all" id="ulFilms"></ul>
 
     </div>
-    
-    
+        
   </section>
+
+  <footer>
+    <div class="copyright">
+
+    </div>
+    <nav class="navFooter">
+      <li><a href="#">Blog</a></li>
+      <li><a href="./info.html">Our Developers</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </nav>
+
+
+  </footer>
   
 </body>
 </html>
