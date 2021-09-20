@@ -19,4 +19,11 @@
   {
     padding: 5px;
   }
+  
+  
+  #inputSearch
+  {
+    height: 50px;
+    width: 300px;
+  }
 }
