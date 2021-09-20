@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search | HorrorFlix 👻</title>
+  
+  
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/info.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+  
+  
+  
+  <!-- Importação dos ícones do fontawesome -->
+  <script src="https://kit.fontawesome.com/be9d449732.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  
+  <header>
+    <div>
+      <!-- mudar para img depois -->
+      <h1><a href="./index.html"><img src="./css/images/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></a></h1> 
+    </div>
+    
+    <!-- Barra de navegação -->
+    <nav class="navContainer">
+      <li class="btn btn-danger" id="signUp"><a href="indexform.html">Sign up</a></li>
+      <li class="btn btn-danger" id="login">Login</li>
+      <li class="btn btn-danger" id="search">Search <i class="fas fa-search"></i></li>
+    </nav>
+  </header>
+  
+  
+  <section>
+    <div class="container">
+      <div class="films">
+        
+        <div id="tittle">
+          <h2>Our horror movie collection for you</h2>
+          <p class="movies__msg">What to watch?</p>
+        </div>    
+        
+        <div class="buscas">
+          <input type="text" id="pesquisa" placeholder="Digite aqui o filme que deseja buscar" name="movie" class="form__input">
+          <i class="fas fa-search"></i>
+          
+        </div>    
+        
+        <div id="resultado" class="resultado">
+          <h1 id="titulo"></h1>
+        </div>
+        
+        <div id="resultadosBusca">
+          
+        </div>
+        
+      </div>
+      <ul class="movies-all" id="movies"></ul>
+
+    </div>
+    
+    
+  </section>
+  
+</body>
+</html>
