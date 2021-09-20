@@ -88,8 +88,9 @@ section
 {
   background-color: #bd0909;
   color: white;
-  padding: 3%;
-  font-size: larger;
+  padding: 0 3%;
+  border: none;
+  
 }
 
 
