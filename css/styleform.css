@@ -1,6 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+<<<<<<< Updated upstream
     background-image: url(./images/backgroundform.jfif)
+=======
+    background-image: url(./images/backgroundform.jfif);
+>>>>>>> Stashed changes
 }
 .box{
     color: white;
@@ -71,7 +75,11 @@ legend{
 /* #submit:hover{
     background-color: #bd0909;
     /* background-image: linear-gradient(to right,rgb(181, 55, 55), rgb(220, 100, 20)); */
+<<<<<<< Updated upstream
  
+=======
+/* }  */
+>>>>>>> Stashed changes
 
 #socorr{
     color: #bd0909;
