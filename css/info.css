@@ -3,6 +3,8 @@ body
   background-image: url(./images/back2.png);
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  
 }
 
 header
@@ -28,17 +30,14 @@ header
   
 }
 
-
 .logoprincipal {
   padding: 2em;
   width: 50%;
 }
 
-
-
 .navContainer
 {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -46,7 +45,7 @@ header
   
 }
 
-section
+.developers
 {
   display: flex;
   justify-content: space-evenly;
@@ -73,12 +72,15 @@ section
 
 }
 
-
 h5, h6
 {
   text-align: center;
 }
 
+a>img
+{
+ text-align: center;
+}
 
 footer
 {
@@ -91,29 +93,23 @@ footer
 
   z-index: 999;
   margin-bottom:0;
-  
-}
 
+   
+}
 
 .navFooter {
   background-color: #bd0909;
   color: white;
   width: 100%;
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   align-items: center;
 }
 
-
-.navFooter> a:hover, a:active, a:visited, a:link, a::selection {
-  text-decoration: none;
-  font-weight: bolder;
-
-}
-
-a>img
+.navFooter> a:hover, a:active, a:visited, a:link, a::selection
 {
- text-align: center;
+  text-decoration: none;
+  color: white;
 }
