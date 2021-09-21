@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="http://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" defer></script>
-  <script src="js/movieSearch.js" defer></script>
   <title>Search | HorrorFlix 👻</title>
   
   
@@ -23,17 +21,24 @@
 <body>
   
   <header>
+    
     <div>
-      <!-- mudar para img depois -->
-      <h1><a href="./index.html"><img src="./css/images/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></a></h1> 
+      <!-- Imagem da logo -->
+      <h1><a href="./index.html"><img src="./assets/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></a></h1> 
     </div>
     
     <!-- Barra de navegação -->
     <nav class="navContainer">
-      <li class="btn btn-danger" id="signUp"><a href="indexform.html">Sign up</a></li>
+      <li class="btn btn-danger" id="signUp">
+        <a href="indexform.html">Sign up</a>
+      </li>
       <li class="btn btn-danger" id="login">Login</li>
-      <li class="btn btn-danger" id="search">Search <i class="fas fa-search"></i></li>
+      <li class="btn btn-danger" id="search">
+        <a href="./search.html">Search</a>
+        <i class="fas fa-search"></i>
+      </li>  
     </nav>
+
   </header>
   
   
@@ -43,34 +48,34 @@
         
         <div id="tittle">
           <h2>Our horror movie collection for you</h2>
-          <p class="movies__msg">What to watch?</p>
+          <p>What to watch?</p>
         </div>    
         
         <div class="input">
           
-          <input type="search" id="inputSearch" placeholder="What movie are you looking for?" name="movie" class="form__input">
+<<<<<<< Updated upstream
+          <input type="text" id="inputSearch" placeholder="What movie are you looking for?" name="movie" class="form__input">
+          <i class="fas fa-search" id="icon"></i>
+=======
+          <input type="search" id="inputSearch" placeholder="What movie are you looking for?" name="movie">
           <button type="submit" id="icon"><i class="fas fa-search"></i></button>
+>>>>>>> Stashed changes
           
         </div>    
                    
         <div id="result">
           
         </div>
-
-        <div id="deuErro"></div>
         
       </div>
 
-      <ul class="movies-all" id="ulFilms"></ul>
-
+      
     </div>
         
   </section>
 
   <footer>
-    <div class="copyright">
 
-    </div>
     <nav class="navFooter">
       <li><a href="#">Blog</a></li>
       <li><a href="./info.html">Our Developers</a></li>
@@ -78,6 +83,28 @@
       <li><a href="#">Terms & Conditions</a></li>
     </nav>
 
+    <nav class="socialMedia">
+      <li>
+        <a href="https://www.instagram.com/resilia.br/">
+          <img src="./assets/iconInstagram.png" alt="instagram" class="icons">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/school/resilia-educacao/">
+          <img src="./assets/iconLinkedin.png" alt="linkedin" class="icons">
+        </a> 
+      </li>
+      <li>
+        <img src="./assets/iconTwitter.png" alt="twitter" class="icons">
+      </li>
+      <li>
+        <img src="./assets/iconWhatsapp.png" alt="whatsapp" class="icons">
+      </li>
+    </nav>
+
+    <div class="copyright">
+      <p class="copy">&copy; Todos os direitos reservados. Página desenvolvida para fins didáticos. || Projeto de Final do Módulo 2 - Grupo 1 | Turma 8 - Resilia Educação</p>
+    </div>
 
   </footer>
   
