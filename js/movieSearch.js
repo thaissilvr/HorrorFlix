@@ -1,16 +1,18 @@
-// REQUISIÇÃO PARA O SEARCH
-const deuRuim = document.getElementById('deuErro')
+let div = document.getElementById('resultado')
 
 $('#icon').on('click', function () {
-    let searching = $('#inputSearch').val();
-    let urlMovie = "http://www.omdbapi.com/?t=" + searching + '&apikey=333f7a1b'
+    let searchingTitle = $('#inputSearch').val() ;
+    let urlMovie = "http://www.omdbapi.com/?t=" + searchingTitle + '&apikey=333f7a1b'
     
     $.ajax({
         url: urlMovie,
-        success: function (getMovie)  { 
-            $(`
-                
+        success: function (getMovie) { 
+            console.log(getMovie)   
+            if (getMovie.Response == 'True') {    
+            $('#resultado').html(`
                 <div class="result">
+
+
 
                     <div class="img">
                         <img src="${getMovie.Poster}"
@@ -20,7 +22,7 @@ $('#icon').on('click', function () {
                         <h2>${getMovie.Title}</h2>
                     </div>
                     
-                    <div class="movieinfo">
+                    <div class="result">
                         <ul>
                         <li>${getMovie.Year}</li>
                         <li>${getMovie.Runtime}</li>
@@ -30,7 +32,7 @@ $('#icon').on('click', function () {
                     </div>
 
 
-                    <div class="movieinfo2">
+                    <div>
                         <ul>
                         <li>Director: ${getMovie.Director}</li>
                         <li>Actors: ${getMovie.Actors}</li>
@@ -45,12 +47,17 @@ $('#icon').on('click', function () {
                     </p>
                 </div>
                 </div>
-
-        `).appendTo($("#result"))
-        console.log(getMovie)
-        }  
-    })  
-})
-
-
+        `)  
+    } else {
+        console.log('else')
+        $('#resultado').html ('Not found. Try again!')
+    }        
+        },
+            error: function (showError) {
+                console.log(showError)
+              div.innerHTML = 'Offline server'  
+             }
+    
+    })
+    })
 
