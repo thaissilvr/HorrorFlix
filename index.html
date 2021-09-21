@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
   
+<<<<<<< Updated upstream
   <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
 
@@ -20,30 +21,41 @@
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
 
+=======
+>>>>>>> Stashed changes
   <!-- Importação dos ícones do fontawesome -->
   <script src="https://kit.fontawesome.com/be9d449732.js" crossorigin="anonymous"></script>
 
 
   <script src="./js/app.js" defer></script>
+<<<<<<< Updated upstream
+=======
+  <script src="./js/modal.js" defer></script>
+>>>>>>> Stashed changes
 
   
 </head>
 <body>
   
   <header>
+
     <div>
       <!-- Imagem da logo -->
-      <h1><a href="./index.html"><img src="./css/images/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></a></h1> 
+      <h1><a href="./index.html"><img src="./assets/horrorflixlogo.svg" alt="Logo HorrorFlix" class="logoprincipal"></a></h1> 
     </div>
     
     <!-- Barra de navegação -->
     <nav class="navContainer">
-      <li class="btn btn-danger" id="signUp"><a href="indexform.html">Sign up</a></li>
+      <li class="btn btn-danger" id="signUp">
+        <a href="indexform.html">Sign up</a>
+      </li>
       <li class="btn btn-danger" id="login">Login</li>
-      <li class="btn btn-danger" id="search">Search <i class="fas fa-search"></i></li>
-
-      
+      <li class="btn btn-danger" id="search">
+        <a href="./search.html">Search</a>
+        <i class="fas fa-search"></i>
+      </li>  
     </nav>
+
   </header>
   
   <!-- carrosel -->
@@ -55,6 +67,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
+<<<<<<< Updated upstream
         <img src="./css/images/getout.jpg" class="d-block w-100">
       </div>
       <div class="carousel-item">
@@ -62,6 +75,21 @@
       </div>
       <div class="carousel-item">
         <img src="./css/images/us.jpg" class="d-block w-100">
+=======
+        <img src="./assets/us.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/conjuring.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/getout.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/it.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/doctorsleep.jpg" class="d-block w-100">
+>>>>>>> Stashed changes
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
@@ -88,7 +116,15 @@
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
           <li class="glide__slide">
+<<<<<<< Updated upstream
             <img id='image1' src="./css/images/test1.jpg" alt="">
+=======
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              
+            <img id='image1' src="./assets/test1.jpg" alt="">
+          </button>
+          
+>>>>>>> Stashed changes
           </li>
         </ul>
       </div>
@@ -146,14 +182,12 @@
   
   
   <div class="imgscared">
-    <img src="./css/images/friends-scared.jfif" alt="Friends watching a scary movie">
+    <img src="./assets/friends-scared.jfif" alt="Friends watching a scary movie">
   </div>
   
  
-  <footer>
-    <div class="copyright">
+ <footer>
 
-    </div>
     <nav class="navFooter">
       <li><a href="#">Blog</a></li>
       <li><a href="./info.html">Our Developers</a></li>
@@ -161,8 +195,31 @@
       <li><a href="#">Terms & Conditions</a></li>
     </nav>
 
+    <nav class="socialMedia">
+      <li>
+        <a href="https://www.instagram.com/resilia.br/">
+          <img src="./assets/iconInstagram.png" alt="instagram" class="icons">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/school/resilia-educacao/">
+          <img src="./assets/iconLinkedin.png" alt="linkedin" class="icons">
+        </a> 
+      </li>
+      <li>
+        <img src="./assets/iconTwitter.png" alt="twitter" class="icons">
+      </li>
+      <li>
+        <img src="./assets/iconWhatsapp.png" alt="whatsapp" class="icons">
+      </li>
+    </nav>
+
+    <div class="copyright">
+      <p class="copy">&copy; Todos os direitos reservados. Página desenvolvida para fins didáticos. || Projeto de Final do Módulo 2 - Grupo 1 | Turma 8 - Resilia Educação</p>
+    </div>
 
   </footer>
+  
   
 
   <script src="./css/bootstrap/js/bootstrap.min.js"></script>
@@ -178,5 +235,10 @@
   </script>
   
 
+<<<<<<< Updated upstream
+=======
+<!-- Fim da div do modal -->
+
+>>>>>>> Stashed changes
 </body>
 </html>

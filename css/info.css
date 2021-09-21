@@ -1,6 +1,6 @@
 body
 {
-  background-image: url(./images/back2.png);
+  background-image: url(/assets/back2.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -84,17 +84,19 @@ a>img
 
 footer
 {
+  background-color: #bd0909;
+  color: white;
   display:flex;
   justify-content: center;
+  flex-wrap: wrap;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   z-index: 999;
   margin-bottom:0;
-
-   
+    
 }
 
 .navFooter {
@@ -106,10 +108,48 @@ footer
   justify-content: space-evenly;
   list-style: none;
   align-items: center;
+  
 }
 
 .navFooter> a:hover, a:active, a:visited, a:link, a::selection
 {
   text-decoration: none;
-  color: white;
+  color: white !important;
+}
+
+.socialMedia
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.socialMedia>li
+{
+  list-style: none;
+}
+
+.icons
+{
+  height: 40px;
+  width: 40px;
+}
+
+.icons:hover
+{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.copyright
+{
+  text-align: center;
+  width: 100%;
+}
+
+.copy
+{
+  margin: 0 !important;
+  font-size: 12px;
 }
