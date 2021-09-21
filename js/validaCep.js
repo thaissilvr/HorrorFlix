@@ -1,4 +1,4 @@
-let socorr = document.getElementById("socorr");
+const socorr = document.getElementById("socorr");
 
 $('document').ready(function(){
     $('#cep').focusout(function(){
