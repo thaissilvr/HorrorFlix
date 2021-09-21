@@ -1,12 +1,13 @@
 // REQUISIÇÃO PARA O SEARCH
+const deuRuim = document.getElementById('deuErro')
 
 $('#icon').on('click', function () {
     let searching = $('#inputSearch').val();
     let urlMovie = "http://www.omdbapi.com/?t=" + searching + '&apikey=333f7a1b'
     
     $.ajax({
-        'url': urlMovie,
-        'success': function (getMovie)  { 
+        url: urlMovie,
+        success: function (getMovie)  { 
             $(`
                 
                 <div class="result">
@@ -45,11 +46,11 @@ $('#icon').on('click', function () {
                 </div>
                 </div>
 
-        `).appendTo($("#result"));
-
-    
-        }
-    })
-    
+        `).appendTo($("#result"))
+        console.log(getMovie)
+        }  
+    })  
 })
+
+
 

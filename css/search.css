@@ -94,6 +94,20 @@ section
 }
 
 
+#result {
+  
+  box-sizing: content-box;
+  height:80vh;
+  width: 80vh;
+  margin-top: 2%;
+}
+
+.img {
+  width: fit-content;
+  height:fit-content;
+  padding:2%;
+ 
+}
 
 footer
 {
