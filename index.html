@@ -7,17 +7,26 @@
   <meta name="viewport" content="width=H, initial-scale=1.0">
   <title>HorrorFlix 👻</title>
   
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   
-  
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-  
-  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
 
   
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  
+
+
+  
+
+
+
+  
 
 
   <!-- Importação dos ícones do fontawesome -->
@@ -25,6 +34,7 @@
 
 
   <script src="./js/app.js" defer></script>
+  <script src="modal.js" defer></script>
 
   
 </head>
@@ -98,8 +108,13 @@
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
           <li class="glide__slide">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              
             <img id='image1' src="./css/images/test1.jpg" alt="">
+          </button>
+          
           </li>
+
         </ul>
       </div>
       
@@ -187,6 +202,25 @@
     new Glide('.glide', configImagesFilms).mount()
   </script>
   
+<!-- começo da div do modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Fim da div do modal -->
 </body>
 </html>
