@@ -130,14 +130,12 @@ footer
   
 }
 
-<<<<<<< Updated upstream
-
-
-a:hover,a:active, a:visited, a:link, a::selection {
+a:hover,a:active, a:visited, a:link, a::selection
+{
   text-decoration: none;
   /* font-weight: bolder; */
   color: white;
-=======
+}
 .navFooter> a:hover, a:active, a:visited, a:link, a::selection
 {
   text-decoration: none;
@@ -187,5 +185,5 @@ a:hover,a:active, a:visited, a:link, a::selection {
 
 .modal-backdrop{
   z-index: 9;
->>>>>>> Stashed changes
+
 }
