@@ -86,8 +86,9 @@ section
 {
   background-color: #bd0909;
   color: white;
-  padding: 3%;
-  font-size: larger;
+  padding: 0 3%;
+  border: none;
+  
 }
 
 .result
@@ -95,6 +96,20 @@ section
   margin-top: 40px;
 }
 
+#result {
+  
+  box-sizing: content-box;
+  height:80vh;
+  width: 80vh;
+  margin-top: 2%;
+}
+
+.img {
+  width: fit-content;
+  height:fit-content;
+  padding:2%;
+ 
+}
 
 footer
 {

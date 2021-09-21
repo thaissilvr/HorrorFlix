@@ -41,11 +41,22 @@ header
   display: block;
   width: 100%;
   overflow: hidden;
-  
+  height: 550px;
 }
+
+.carousel-item img{
+    /* width:100%;
+    height:100%; */
+    height: 550px;
+    object-fit:cover;
+
+}
+
 
 .aboutTheSite
 {
+  color: white;
+  background-color: #bd0909;
   height: 250px;
   padding: 40px;
 
@@ -130,11 +141,12 @@ footer
   
 }
 
-a:hover,a:active, a:visited, a:link, a::selection
-{
+
+
+.navFooter > a:hover,a:active, a:visited, a:link, a::selection {
   text-decoration: none;
   /* font-weight: bolder; */
-  color: white;
+  color: white !important;
 }
 .navFooter> a:hover, a:active, a:visited, a:link, a::selection
 {
@@ -185,5 +197,9 @@ a:hover,a:active, a:visited, a:link, a::selection
 
 .modal-backdrop{
   z-index: 9;
-
 }
+
+/* #exampleModal{
+  z-index: 999 !important;
+
+} */
