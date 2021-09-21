@@ -1,6 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+<<<<<<< Updated upstream
     background-image: linear-gradient(to right, rgb(153, 13, 13), rgb(196, 135, 125));
+=======
+    background-image: url(./images/backgroundform.jfif);
+>>>>>>> Stashed changes
 }
 .box{
     color: white;
@@ -63,6 +67,14 @@ legend{
 #submit:hover{
     background-image: linear-gradient(to right,rgb(181, 55, 55), rgb(220, 100, 20));
 }
+<<<<<<< Updated upstream
+=======
+
+/* #submit:hover{
+    background-color: #bd0909;
+    /* background-image: linear-gradient(to right,rgb(181, 55, 55), rgb(220, 100, 20)); */
+/* }  */
+>>>>>>> Stashed changes
 
 #socorr{
     color: red;
