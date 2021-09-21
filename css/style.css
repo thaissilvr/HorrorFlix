@@ -140,8 +140,22 @@ footer
 
 
 
-.navFooter a:hover,a:active, a:visited, a:link, a::selection {
+.navFooter > a:hover,a:active, a:visited, a:link, a::selection {
   text-decoration: none;
   /* font-weight: bolder; */
-  color: white;
+  color: white !important;
+}
+
+
+
+
+/* Modal */
+
+.modal-backdrop{
+  z-index: 9;
+}
+
+#exampleModal{
+  z-index: 999 !important;
+
 }
