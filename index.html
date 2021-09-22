@@ -7,11 +7,17 @@
   <meta name="viewport" content="width=H, initial-scale=1.0">
   <title>HorrorFlix 👻</title>
   
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-   
-  <link rel="stylesheet" href="./css/reset.css">
+  
+  <script src="./vendor/glider.js" ></script>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/bootstrap/css/glide.core.min.css">
+  <script src="./css/bootstrap/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="./vendor/glider.css">
+  <link rel="stylesheet" href="./css/reset.css">
+
+  
+  
   
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
@@ -20,9 +26,7 @@
   <script src="https://kit.fontawesome.com/be9d449732.js" crossorigin="anonymous"></script>
 
 
-  <script src="./js/app.js" defer></script>
-  <script src="./js/modal.js" defer></script>
-
+  <!-- <script src="./js/modal.js" ></script> -->
   
 </head>
 <body>
@@ -98,23 +102,16 @@
     
     <div class="glide">
       <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-          <li class="glide__slide">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              
-            <img id='image1' src="./assets/test1.jpg" alt="">
-          </button>
-          
-          </li>
-
+        <ul class="glide__slides" id="glide" style="width: 1920px;height: 350px;">         
         </ul>
       </div>
       
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="btn btn-outline-danger" id='btnFilm' data-glide-dir="<"><</button>
-        <button class="btn btn-outline-danger" id="btnFilm" data-glide-dir=">">></button>
-      </div>
       
+      
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="btn btn-outline-danger glider-prev" id='btnFilm' >&lt;</button>
+        <button class="btn btn-outline-danger glider-next" id="btnFilm" >&gt;</button>
+      </div>
     </div>
     
   </section>
@@ -203,17 +200,8 @@
   
   
 
-  <script src="./css/bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   
-  <script>
-    const configImagesFilms =
-    {
-      type: 'carousel',
-      perView: 6
-    }
-    new Glide('.glide', configImagesFilms).mount()
-  </script>
+
   
   <!-- começo da div do modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -237,5 +225,7 @@
 <!-- Fim da div do modal -->
 
 <!-- Fim da div do modal -->
+  <script src="./js/app.js" ></script>
+  <script src="./js/glide.js" defer></script>
 </body>
 </html>
