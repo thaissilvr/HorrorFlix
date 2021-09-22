@@ -1,0 +1,72 @@
+/* id da div html pag search que entrará o resultado */
+#resultado{ 
+    margin-top: 2em;
+    font-size: 50px;
+}
+
+/* div maior envolvendo tudo */
+ .result{
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .result{
+    /* display: grid;
+    grid-template-columns: 350px 500px;
+    grid-template-areas: "poster infostxt";
+    grid-template-rows: 1fr; */
+    display:flex;
+    flex-direction: row;
+
+}
+/* poster do filme */
+.poster{
+    justify-content: center;
+    width: fit-content;
+    
+    /* grid-area: poster; */
+}
+
+.infostxt{
+    width: 480px;
+    color:white;
+}
+
+
+/* h2 título do filme */
+/* .title{
+display:flex;
+} */
+
+/* div das informações do filme */
+.infosdofilme{
+    text-align: left;
+
+
+}
+
+/* div das informações tecnicas */
+.infostecnicas{
+    text-align: left;
+
+
+}
+
+/* sinopse do filme */
+.textinho{
+    text-align: justify;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 20px;
+  
+    margin-left: auto;
+    margin-right: auto;
+
+}
