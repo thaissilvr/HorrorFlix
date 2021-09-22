@@ -2,7 +2,7 @@ let div = document.getElementById('resultado')
 
 $('#icon').on('click', function () {
     let searchingTitle = $('#inputSearch').val() ;
-    let urlMovie = "http://www.omdbapi.com/?t=" + searchingTitle + '&apikey=333f7a1b'
+    let urlMovie = "https://www.omdbapi.com/?t=" + searchingTitle + '&apikey=333f7a1b'
     
     $.ajax({
         url: urlMovie,
