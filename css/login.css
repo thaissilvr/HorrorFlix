@@ -58,19 +58,19 @@ h2{
 .or-box
 {
     position: relative;
-    border-top: 1px solid black;
+    border-top: 1px solid #454545;
     padding-top: 20px;
     margin-top:20px;
 }
 .or
 {
     color: #ffffff;
-
     position: absolute;
     text-align: center;
     top: -8px;
     width: 40px;
-    left: 50%;
+    left: 48.5%;
+    width: fit-content;
 }
 .account-box .btn:hover
 {
@@ -117,4 +117,8 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
 
 .checkbox{
     color:white;
+}
+
+.segundarow{
+    width: fit-content;
 }
