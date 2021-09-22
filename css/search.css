@@ -45,6 +45,7 @@ header
   
 }
 
+/* Tamanho da página em si para ter espaço para a div de busca */
 section
 {
   height: 180vh;
@@ -57,7 +58,10 @@ section
   align-items: center;
   text-align: center;
   width: 100%;
+  
+
 }
+
 
 .films
 {
