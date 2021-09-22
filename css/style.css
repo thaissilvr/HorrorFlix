@@ -62,6 +62,13 @@ header
 
 }
 
+.aboutTheSite > p
+{
+  margin: 5px;
+  font-size: 18px;
+  padding: auto;
+}
+
 .imagesFilms
 {
   /* height: 380px; */
@@ -77,6 +84,17 @@ header
 .glide__arrows
 {
   text-align: center;
+}
+
+.alldevices
+{
+  display: flex;
+  padding: 40px;
+  height: 290px;
+}
+.alldevices>img{
+
+  width: 50%;
 }
 
 .plansSection
