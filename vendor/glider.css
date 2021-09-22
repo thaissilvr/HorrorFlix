@@ -108,6 +108,9 @@
   height: 12px;
   margin: 7px;
 }
+.glide__slide{
+  margin-right:55px;
+}
 .glider-dot:hover,
 .glider-dot.active {
   background: #d8007e;
