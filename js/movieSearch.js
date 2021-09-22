@@ -12,41 +12,40 @@ $('#icon').on('click', function () {
             $('#resultado').html(`
                 <div class="result">
 
-
-
-                    <div class="img">
+                    <div class="poster">
                         <img src="${getMovie.Poster}"
                     </div>
-
-                    <div class="title">
-                        <h2>${getMovie.Title}</h2>
-                    </div>
-                    
-                    <div class="result">
-                        <ul>
-                        <li>${getMovie.Year}</li>
-                        <li>${getMovie.Runtime}</li>
-                        <li>${getMovie.Rated}</li>
-                        <li>${getMovie.Genre}</li>
-                        </ul>
-                    </div>
-
-
-                    <div>
-                        <ul>
-                        <li>Director: ${getMovie.Director}</li>
-                        <li>Actors: ${getMovie.Actors}</li>
-                        <li>Country: ${getMovie.Country}</li>
-                        <li>Rating: ${getMovie.Ratings[0].Value}</li>
-                        </ul>
-                    </div>
-
-
-                    <p>
-                        ${getMovie.Plot}
-                    </p>
                 </div>
-                </div>
+
+                    <div class="infostxt">
+                        <div class="title">
+                            <h2>${getMovie.Title}</h2>
+                        </div>
+                        
+                        <div class="infosdofilme">
+                            <ul>
+                            <li>${getMovie.Year}</li>
+                            <li>${getMovie.Runtime}</li>
+                            <li>${getMovie.Rated}</li>
+                            <li>${getMovie.Genre}</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="infostecnicas">
+                            <ul>
+                            <li>Director: ${getMovie.Director}</li>
+                            <li>Actors: ${getMovie.Actors}</li>
+                            <li>Country: ${getMovie.Country}</li>
+                            <li>Rating: ${getMovie.Ratings[0].Value}</li>
+                            </ul>
+                        </div>
+
+                        <p class="textinho">
+                            ${getMovie.Plot}
+                        </p> 
+                    </div>
+             
         `)  
     } else {
         console.log('else')
